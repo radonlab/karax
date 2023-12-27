@@ -1,8 +1,6 @@
 from fastapi import FastAPI
+from .bluetooth.router import router
 
 app = FastAPI()
 
-
-@app.get('/')
-async def root():
-    return {'app': 'karax'}
+app.include_router(router)
