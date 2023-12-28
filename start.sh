@@ -18,4 +18,4 @@ while getopts "p:h" opt; do
   esac
 done
 
-uvicorn --port ${PORT:-8080} main:app
+uvicorn --port ${PORT:-8080} karax:app
