@@ -1,0 +1,12 @@
+[project]
+name = "karax"
+version = "0.1.0"
+description = "karax web application"
+authors = ["skylerlee <skyler.ac.lee@gmail.com>"]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
