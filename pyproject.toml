@@ -24,3 +24,6 @@ select = [
     "CPY",  # flake8-copyright
 ]
 preview = true
+extend-exclude = [
+    "./setup.py",
+]
