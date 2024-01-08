@@ -14,16 +14,16 @@ build-backend = "setuptools.build_meta"
 [tool.ruff]
 target-version = "py311"
 select = [
-    "E",    # pycodestyle errors
-    "W",    # pycodestyle warnings
-    "F",    # pyflakes
-    "I",    # isort
-    "C",    # flake8-comprehensions
-    "B",    # flake8-bugbear
-    "UP",   # pyupgrade
-    "CPY",  # flake8-copyright
+  "E",    # pycodestyle errors
+  "W",    # pycodestyle warnings
+  "F",    # pyflakes
+  "I",    # isort
+  "C",    # flake8-comprehensions
+  "B",    # flake8-bugbear
+  "UP",   # pyupgrade
+  "CPY",  # flake8-copyright
 ]
 preview = true
 extend-exclude = [
-    "./setup.py",
+  "./setup.py",
 ]
