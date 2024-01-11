@@ -6,8 +6,9 @@ found in the LICENSE file.
 
 from fastapi import FastAPI
 
-from .bluetooth.router import router
+from .bluetooth import router as bluetooth_router
+from .camera import router as camera_router
 
 app = FastAPI()
-
-app.include_router(router)
+app.include_router(bluetooth_router)
+app.include_router(camera_router)
