@@ -1,7 +1,11 @@
 import { createRoot } from 'react-dom/client';
+import { Button } from "@mui/base";
+import './app.scss';
 
 const App = () => {
-  return <h3>Hello</h3>;
+  return <div>
+    <Button>Hello</Button>
+  </div>;
 };
 
 const container = document.getElementById('root');
