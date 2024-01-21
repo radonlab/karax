@@ -12,7 +12,7 @@ await esbuild.build({
   bundle: true,
   minify: true,
   sourcemap: true,
-  outfile: path.resolve(distDir, 'out.js'),
+  outfile: path.resolve(distDir, 'app.js'),
   plugins: [
     esbuildPluginBrowserslist(browserslist('defaults'), {
       printUnknownTargets: false,
