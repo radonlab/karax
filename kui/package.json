@@ -3,16 +3,25 @@
   "private": true,
   "description": "karax web UI",
   "author": "skylerlee <skyler.ac.lee@gmail.com>",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@1.22.21",
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "packageManager": "yarn@1.22.21",
   "dependencies": {
-    "@mui/base": "^5.0.0-beta.32"
+    "@mui/base": "^5.0.0-beta.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.19.11"
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "browserslist": "^4.22.2",
+    "esbuild": "^0.19.11",
+    "esbuild-plugin-browserslist": "^0.10.0"
   },
   "license": "MIT"
 }

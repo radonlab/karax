@@ -1,5 +1,7 @@
 import path from 'path';
-import * as esbuild from 'esbuild';
+import esbuild from 'esbuild';
+import browserslist from 'browserslist';
+import { esbuildPluginBrowserslist } from 'esbuild-plugin-browserslist';
 import { projectDir } from './utils.mjs';
 
 const srcDir = path.resolve(projectDir, 'src');
@@ -10,6 +12,10 @@ await esbuild.build({
   bundle: true,
   minify: true,
   sourcemap: true,
-  target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
   outfile: path.resolve(distDir, 'out.js'),
+  plugins: [
+    esbuildPluginBrowserslist(browserslist('defaults'), {
+      printUnknownTargets: false,
+    }),
+  ],
 });
