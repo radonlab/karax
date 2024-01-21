@@ -4,12 +4,15 @@
   "description": "karax web UI",
   "author": "skylerlee <skyler.ac.lee@gmail.com>",
   "scripts": {
-    "build": "vite build",
-    "type-check": "tsc",
+    "build": "node scripts/build.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "packageManager": "yarn@1.22.21",
+  "dependencies": {
+    "@mui/base": "^5.0.0-beta.32"
+  },
   "devDependencies": {
+    "esbuild": "^0.19.11"
   },
   "license": "MIT"
 }
