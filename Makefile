@@ -1,4 +1,4 @@
-.phony: default target emulate
+.PHONY: default target emulate
 
 default:
 	@echo "Usage: make <target>"
