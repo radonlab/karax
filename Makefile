@@ -11,5 +11,5 @@ emulate: target
         -machine virt \
         -cpu cortex-a53 \
         -nographic \
-        -m 512M \
+        -m 1G \
         -kernel target/aarch64-unknown-none-softfloat/debug/karax
