@@ -15,16 +15,18 @@ Based on the Raspberry Pi 3 Model B+ product brief, the key hardware specificati
 
 ## Target Architecture
 
-The system kernel is specifically designed for the **Cortex-A53** processor, which implements the ARMv8 architecture and supports both AArch64 (64-bit) and AArch32 (32-bit) execution states.
+The system kernel is specifically designed for the **Cortex-A53** processor, which implements the ARMv8 architecture
+and supports both AArch64 (64-bit) and AArch32 (32-bit) execution states.
 
 ## Rust Cross-Compilation Toolchain
 
 According to the Rust platform support documentation for `aarch64-unknown-none`, when developing for the Cortex-A53 core:
 
 - The instruction set used is **AArch64** (64-bit ARM architecture)
-- The required cross-compilation target is `aarch64-unknown-none-softfloat`
+- The using cross-compilation target is `aarch64-unknown-none-softfloat`
 - This target provides a bare-metal environment without operating system support
-- The softfloat variant is appropriate for environments where floating-point operations should be handled via software emulation
+- The softfloat variant is appropriate for kernel development, because kernel functions typically don't require
+floating-point calculations, making the softfloat more suitable for the integer-focused operations of system-level code
 
 To install this target, use:
 
