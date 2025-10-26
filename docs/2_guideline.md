@@ -26,7 +26,7 @@ According to the Rust platform support documentation for `aarch64-unknown-none`,
 - The using cross-compilation target is `aarch64-unknown-none-softfloat`
 - This target provides a bare-metal environment without operating system support
 - The softfloat variant is appropriate for kernel development, because kernel functions typically don't require
-floating-point calculations, making the softfloat more suitable for the integer-focused operations of system-level code
+floating-point calculations, and can avoid the overhead of saving/restoring FPU state during context switches.
 
 To install this target, use:
 
