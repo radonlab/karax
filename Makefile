@@ -8,8 +8,10 @@ target:
 
 emulate: target
 	qemu-system-aarch64 \
-        -machine virt \
+        -M raspi3b \
         -cpu cortex-a53 \
-        -nographic \
         -m 1G \
-        -kernel target/aarch64-unknown-none-softfloat/debug/karax
+        -kernel target/aarch64-unknown-none-softfloat/debug/karax \
+        -display none \
+        -serial null \
+        -serial stdio
