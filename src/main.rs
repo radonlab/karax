@@ -2,7 +2,6 @@
 #![no_main] // Disable all Rust-level entry points
 
 use panic_halt as _;
-use cortex_a_rt::entry;
 
 #[entry]
 fn main() -> ! {
