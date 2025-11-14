@@ -4,4 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+karax_macros = { version = "0.1.0", path = "../karax_macros" }
 panic-halt = "1.0.0"

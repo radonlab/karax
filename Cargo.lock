@@ -3,11 +3,16 @@
 version = 4
 
 [[package]]
-name = "karax"
+name = "karax_kernel"
 version = "0.1.0"
 dependencies = [
+ "karax_macros",
  "panic-halt",
 ]
+
+[[package]]
+name = "karax_macros"
+version = "0.1.0"
 
 [[package]]
 name = "panic-halt"

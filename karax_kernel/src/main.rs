@@ -7,7 +7,7 @@
 
 mod arch;
 
-use arch::arm64::boot::entry;
+use karax_macros::entry;
 use panic_halt as _;
 
 #[entry]
