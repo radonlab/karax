@@ -3,13 +3,14 @@ members = [
   "karax_kernel",
   "karax_macros",
 ]
+resolver = "3"
 
 [workspace.package]
 version = "0.1.0"
 edition = "2024"
 
 [workspace.dependencies]
-panic-halt = "1.0.0"
-proc-macro2 = "1.0.103"
-quote = "1.0.42"
-syn = "2.0.110"
+panic-halt = "1.0"
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = "2.0"
