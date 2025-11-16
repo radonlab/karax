@@ -10,3 +10,6 @@ edition = "2024"
 
 [workspace.dependencies]
 panic-halt = "1.0.0"
+proc-macro2 = "1.0.103"
+quote = "1.0.42"
+syn = "2.0.110"
