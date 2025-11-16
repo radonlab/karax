@@ -3,3 +3,10 @@ members = [
   "karax_kernel",
   "karax_macros",
 ]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+panic-halt = "1.0.0"

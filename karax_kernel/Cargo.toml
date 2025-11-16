@@ -1,8 +1,8 @@
 [package]
 name = "karax_kernel"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
 
 [dependencies]
 karax_macros = { version = "0.1.0", path = "../karax_macros" }
-panic-halt = "1.0.0"
+panic-halt = { workspace = true }
