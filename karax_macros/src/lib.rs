@@ -4,7 +4,7 @@
 
 use proc_macro::TokenStream;
 use quote::quote;
-use syn::{parse_macro_input, Error, ItemFn};
+use syn::{Error, ItemFn, parse_macro_input};
 
 fn validate_fn_signature(fn_sig: &syn::Signature) -> Result<(), Error> {
     if fn_sig.inputs.len() != 0 {
