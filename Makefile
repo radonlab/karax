@@ -11,7 +11,7 @@ emulate: target
         -M raspi3b \
         -cpu cortex-a53 \
         -m 1G \
-        -kernel target/aarch64-unknown-none-softfloat/debug/karax \
+        -kernel target/aarch64-unknown-none-softfloat/debug/karax_kernel \
         -display none \
         -serial null \
         -serial stdio

@@ -35,6 +35,7 @@ pub fn entry(_args: TokenStream, input: TokenStream) -> TokenStream {
     quote! {
         #main_fn
 
+        #[unsafe(no_mangle)]
         pub unsafe extern "C" fn kmain() -> ! {
             #ident()
         }
