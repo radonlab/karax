@@ -2,7 +2,10 @@
 // Use of this source code is governed by the MIT license that can be
 // found in the LICENSE file.
 
-use core::arch::global_asm;
+.section ".text.boot"
+.global _start
 
-// Boot entry point
-global_asm!(include_str!("boot.s"));
+// fn _start()
+_start:
+    // Jump to Rust main function
+    bl kmain
